@@ -4,6 +4,7 @@ configure do
 end
 
 get '/' do
+  @songs = Song.all
   erb :index
 end 
 
